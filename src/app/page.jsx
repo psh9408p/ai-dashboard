@@ -2,6 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { getLatestReport, loadReportsFromDisk, loadSourcesForDate } from "../lib/report-store.mjs";
 
+const DISPLAY_WINDOW_DAYS = 7;
+
 function loadWatchlist() {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), "config", "watchlist.json"), "utf8"));
 }
@@ -10,10 +12,13 @@ function Badge({ children, tone = "neutral" }) {
   return <span className={`badge badge-${tone}`}>{children}</span>;
 }
 
-function Section({ title, children }) {
+function Section({ title, kicker, children }) {
   return (
     <section className="section">
-      <h2>{title}</h2>
+      <div className="sectionHeader">
+        {kicker ? <p className="sectionKicker">{kicker}</p> : null}
+        <h2>{title}</h2>
+      </div>
       {children}
     </section>
   );
@@ -44,7 +49,7 @@ function ReportSummary({ report }) {
   return (
     <div className="summaryGrid">
       {cards.map(([label, value]) => (
-        <div key={label}>
+        <div className="surfaceBlock" key={label}>
           <span>{label}</span>
           <strong>{value}</strong>
         </div>
@@ -58,7 +63,7 @@ function KeyChanges({ changes }) {
   return (
     <div className="changeList">
       {changes.map((change, index) => (
-        <article className="changeItem" key={`${change.event}-${index}`}>
+        <article className="changeItem surfaceBlock" key={`${change.event}-${index}`}>
           <div className="changeMeta">
             <Badge tone={statusTone(change.judgment)}>{change.judgment}</Badge>
             <Badge>{change.horizon}</Badge>
@@ -78,7 +83,7 @@ function sortNotableSources(sources, report) {
     .sort((a, b) => {
       const highlightedDelta = Number(highlightedIds.has(b.id)) - Number(highlightedIds.has(a.id));
       if (highlightedDelta !== 0) return highlightedDelta;
-      return String(b.publishedDate ?? "").localeCompare(String(a.publishedDate ?? ""));
+      return String(b.publishedDate ?? b.eventDate ?? "").localeCompare(String(a.publishedDate ?? a.eventDate ?? ""));
     })
     .slice(0, 10);
 }
@@ -86,13 +91,13 @@ function sortNotableSources(sources, report) {
 function NotableSources({ sources, report }) {
   const notable = sortNotableSources(sources, report);
   if (!notable.length) {
-    return <Empty>No crawled source metadata is available for this report date.</Empty>;
+    return <Empty>No crawled source metadata is available within the seven-day display window.</Empty>;
   }
 
   return (
     <div className="sourceGrid">
       {notable.map((source) => (
-        <article className="sourceItem" key={source.id}>
+        <article className="sourceItem surfaceBlock" key={source.id}>
           <div className="changeMeta">
             <Badge tone={source.sourceType === "disclosure" ? "good" : "neutral"}>{source.sourceType}</Badge>
             <Badge tone={source.reliability === "low" ? "watch" : "neutral"}>{source.reliability ?? "unknown"}</Badge>
@@ -147,7 +152,7 @@ function StockTable({ rows }) {
 
 function PriorityList({ title, rows }) {
   return (
-    <div className="priorityBlock">
+    <div className="priorityBlock surfaceBlock">
       <h3>{title}</h3>
       {rows?.length ? (
         <ol>
@@ -166,10 +171,17 @@ function PriorityList({ title, rows }) {
 }
 
 export default function Home() {
-  const reports = loadReportsFromDisk();
-  const latest = getLatestReport(reports);
+  const allReports = loadReportsFromDisk();
+  const latest = getLatestReport(allReports);
+  const reports = loadReportsFromDisk(process.cwd(), {
+    anchorDate: latest?.date,
+    withinDays: DISPLAY_WINDOW_DAYS,
+  });
   const watchlist = loadWatchlist();
-  const sources = loadSourcesForDate(latest?.date);
+  const sources = loadSourcesForDate(latest?.date, process.cwd(), {
+    anchorDate: latest?.date,
+    withinDays: DISPLAY_WINDOW_DAYS,
+  });
 
   if (!latest) {
     return (
@@ -184,38 +196,39 @@ export default function Home() {
     <main className="page">
       <header className="hero">
         <div>
-          <p className="eyebrow">Korea AI Bottleneck Monitor</p>
+          <p className="eyebrow">Montage-inspired monitoring system</p>
           <h1>Korea AI and Industrial Bottleneck Dashboard</h1>
           <p>
             Daily disclosure and news collection, conservative rule-based scoring, and PR approval before publication.
           </p>
         </div>
-        <div className="heroMeta">
+        <div className="heroMeta surfaceBlock">
           <Badge tone={statusTone(latest.status)}>{latest.status}</Badge>
           <strong>{latest.date}</strong>
           <span>{watchlist.length} tracked companies</span>
+          <span>Showing sources from the last {DISPLAY_WINDOW_DAYS} days</span>
         </div>
       </header>
 
       <p className="disclaimer">{latest.disclaimer}</p>
 
-      <Section title="Final Summary">
+      <Section title="Final Summary" kicker="Thesis validation">
         <ReportSummary report={latest} />
       </Section>
 
-      <Section title="Key Changes Today">
+      <Section title="Key Changes Today" kicker="Verified signal priority">
         <KeyChanges changes={latest.keyChanges} />
       </Section>
 
-      <Section title="Notable Crawled Sources">
+      <Section title="Notable Crawled Sources" kicker={`Only sources within ${DISPLAY_WINDOW_DAYS} days are displayed`}>
         <NotableSources sources={sources} report={latest} />
       </Section>
 
-      <Section title="Company Status Table">
+      <Section title="Company Status Table" kicker="Bottleneck and valuation view">
         <StockTable rows={latest.stockTable} />
       </Section>
 
-      <Section title="Priority Watchlist">
+      <Section title="Priority Watchlist" kicker="Rule-based ranking">
         <div className="priorityGrid">
           <PriorityList title="Strongest bottleneck" rows={latest.priorityTop5?.bottleneck} />
           <PriorityList title="Physical AI potential" rows={latest.priorityTop5?.physicalAi} />
@@ -223,10 +236,10 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section title="Risks That Can Break The Thesis">
+      <Section title="Risks That Can Break The Thesis" kicker="Counter-evidence check">
         <div className="riskGrid">
           {latest.riskReview?.map((risk) => (
-            <article className="riskItem" key={risk.risk}>
+            <article className="riskItem surfaceBlock" key={risk.risk}>
               <Badge tone={statusTone(risk.status)}>{risk.status}</Badge>
               <h3>{risk.risk}</h3>
               <p>Affected companies: {risk.affectedCompanies?.length ? risk.affectedCompanies.join(", ") : "Judgment hold"}</p>
@@ -235,7 +248,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section title="Report History">
+      <Section title="Report History" kicker={`Last ${DISPLAY_WINDOW_DAYS} days`}>
         <div className="history">
           {reports.map((report) => (
             <span key={`${report.status}-${report.date}`}>

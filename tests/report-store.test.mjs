@@ -4,7 +4,12 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-import { getLatestReport, loadSourcesForDate, sortReportsDescending } from "../src/lib/report-store.mjs";
+import {
+  filterItemsWithinDays,
+  getLatestReport,
+  loadSourcesForDate,
+  sortReportsDescending,
+} from "../src/lib/report-store.mjs";
 
 test("sorts reports by date descending", () => {
   const reports = sortReportsDescending([
@@ -42,4 +47,23 @@ test("loads source metadata for a report date", () => {
 
   assert.equal(sources.length, 1);
   assert.equal(sources[0].id, "source-1");
+});
+
+test("filters report and source items to a seven day display window", () => {
+  const items = filterItemsWithinDays(
+    [
+      { id: "today", date: "2026-07-10" },
+      { id: "six-days", publishedDate: "2026-07-04" },
+      { id: "seven-days", eventDate: "2026-07-03" },
+      { id: "old", date: "2026-07-02" },
+      { id: "unknown" },
+    ],
+    "2026-07-10",
+    7,
+  );
+
+  assert.deepEqual(
+    items.map((item) => item.id),
+    ["today", "six-days", "seven-days"],
+  );
 });
