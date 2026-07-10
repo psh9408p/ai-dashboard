@@ -1,0 +1,52 @@
+name: Daily investment report draft
+
+on:
+  workflow_dispatch:
+    inputs:
+      report_date:
+        description: "Report date in YYYY-MM-DD. Defaults to today's UTC date."
+        required: false
+  schedule:
+    - cron: "30 22 * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generate draft report
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          REPORT_DATE: ${{ inputs.report_date }}
+        run: node scripts/generate-daily-report.mjs
+
+      - name: Promote draft inside PR
+        env:
+          REPORT_DATE: ${{ inputs.report_date }}
+        run: node scripts/promote-draft.mjs
+
+      - name: Create approval pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: automation/daily-investment-report
+          delete-branch: true
+          title: "daily: approve investment report"
+          commit-message: "daily: generate investment report"
+          body: |
+            This PR contains the daily draft and its approved report copy.
+
+            Review the generated JSON files and merge this PR only when the report is acceptable.
+          labels: daily-report

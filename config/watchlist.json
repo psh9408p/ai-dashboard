@@ -1,0 +1,152 @@
+[
+  {
+    "id": "sk-hynix",
+    "name": "SK하이닉스",
+    "ticker": "000660.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "00164779",
+    "themes": ["AI 반도체 병목", "HBM 및 고성능 메모리"],
+    "physicalAiRole": "enabler",
+    "officialSources": ["https://news.skhynix.co.kr/", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "samsung-electronics",
+    "name": "삼성전자",
+    "ticker": "005930.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "00126380",
+    "themes": ["AI 반도체 병목", "메모리", "파운드리", "첨단 패키징"],
+    "physicalAiRole": "enabler",
+    "officialSources": ["https://news.samsung.com/kr/", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "hanmi-semiconductor",
+    "name": "한미반도체",
+    "ticker": "042700.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "00246738",
+    "themes": ["AI 반도체 병목", "첨단 패키징과 후공정", "반도체 장비"],
+    "physicalAiRole": "enabler",
+    "officialSources": ["https://www.hanmisemi.com/", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "hd-hyundai-electric",
+    "name": "HD현대일렉트릭",
+    "ticker": "267260.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "01205709",
+    "themes": ["전력 인프라 병목", "초고압 변압기", "전력 자동화"],
+    "physicalAiRole": null,
+    "officialSources": ["https://www.hd-hyundaielectric.com/", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "ls-electric",
+    "name": "LS ELECTRIC",
+    "ticker": "010120.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "00105866",
+    "themes": ["전력 인프라 병목", "전력 자동화", "PLC·인버터"],
+    "physicalAiRole": "enabler",
+    "officialSources": ["https://www.lselectric.co.kr/", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "doosan-enerbility",
+    "name": "두산에너빌리티",
+    "ticker": "034020.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "00159616",
+    "themes": ["전력 인프라 병목", "원전 및 발전설비"],
+    "physicalAiRole": null,
+    "officialSources": ["https://www.doosanenerbility.com/", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "hyundai-motor",
+    "name": "현대차",
+    "ticker": "005380.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "00164742",
+    "themes": ["제조업과 피지컬 AI", "자동차"],
+    "physicalAiRole": "operator",
+    "officialSources": ["https://www.hyundai.com/worldwide/ko/company/newsroom", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "hyundai-mobis",
+    "name": "현대모비스",
+    "ticker": "012330.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "00164788",
+    "themes": ["제조업과 피지컬 AI", "자동차 부품"],
+    "physicalAiRole": "operator",
+    "officialSources": ["https://www.mobis.co.kr/", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "rainbow-robotics",
+    "name": "레인보우로보틱스",
+    "ticker": "277810.KQ",
+    "market": "KOSDAQ",
+    "dartCorpCode": "01204056",
+    "themes": ["제조업과 피지컬 AI", "로봇 본체"],
+    "physicalAiRole": "enabler",
+    "officialSources": ["https://www.rainbow-robotics.com/", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "doosan-robotics",
+    "name": "두산로보틱스",
+    "ticker": "454910.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "01699679",
+    "themes": ["제조업과 피지컬 AI", "협동로봇"],
+    "physicalAiRole": "enabler",
+    "officialSources": ["https://www.doosanrobotics.com/", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "posco-holdings",
+    "name": "POSCO홀딩스",
+    "ticker": "005490.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "00155319",
+    "themes": ["제조업과 피지컬 AI", "철강"],
+    "physicalAiRole": "operator",
+    "officialSources": ["https://www.posco-inc.com/", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "posco-dx",
+    "name": "POSCO DX",
+    "ticker": "022100.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "00156159",
+    "themes": ["제조업과 피지컬 AI", "디지털 트윈", "산업용 소프트웨어"],
+    "physicalAiRole": "enabler",
+    "officialSources": ["https://www.poscodx.com/", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "hd-hyundai",
+    "name": "HD현대",
+    "ticker": "267250.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "01205700",
+    "themes": ["제조업과 피지컬 AI", "조선", "건설기계"],
+    "physicalAiRole": "operator",
+    "officialSources": ["https://www.hd-hyundai.com/", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "lg-electronics",
+    "name": "LG전자",
+    "ticker": "066570.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "00401731",
+    "themes": ["제조업과 피지컬 AI", "로봇", "스마트팩토리"],
+    "physicalAiRole": "operator",
+    "officialSources": ["https://www.lge.co.kr/company/newsroom", "https://dart.fss.or.kr/"]
+  },
+  {
+    "id": "hanwha-aerospace",
+    "name": "한화에어로스페이스",
+    "ticker": "012450.KS",
+    "market": "KOSPI",
+    "dartCorpCode": "00126566",
+    "themes": ["제조업과 피지컬 AI", "방산", "항공우주"],
+    "physicalAiRole": "operator",
+    "officialSources": ["https://www.hanwhaaerospace.co.kr/", "https://dart.fss.or.kr/"]
+  }
+]
