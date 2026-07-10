@@ -23,3 +23,11 @@ export function loadReportsFromDisk(rootDirectory = process.cwd()) {
   const drafts = readJsonFiles(path.join(rootDirectory, "data", "drafts"));
   return sortReportsDescending([...reports, ...drafts]);
 }
+
+export function loadSourcesForDate(date, rootDirectory = process.cwd()) {
+  if (!date) return [];
+  const filePath = path.join(rootDirectory, "data", "sources", `${date}.json`);
+  if (!fs.existsSync(filePath)) return [];
+  const sources = JSON.parse(fs.readFileSync(filePath, "utf8"));
+  return Array.isArray(sources) ? sources : [];
+}

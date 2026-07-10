@@ -145,9 +145,16 @@ h3 {
   gap: 12px;
 }
 
+.sourceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
 .summaryGrid div,
 .priorityBlock,
 .riskItem,
+.sourceItem,
 .changeItem {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -183,9 +190,23 @@ h3 {
 
 .changeItem p,
 .riskItem p,
+.sourceSummary,
 .priorityBlock span {
   color: var(--muted);
   line-height: 1.55;
+}
+
+.sourceLink {
+  display: inline-flex;
+  margin-top: 8px;
+  color: #175cd3;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sourceLink:hover {
+  text-decoration: underline;
 }
 
 .tableWrap {
@@ -262,6 +283,7 @@ tr:last-child td {
   .hero,
   .summaryGrid,
   .priorityGrid,
+  .sourceGrid,
   .riskGrid {
     grid-template-columns: 1fr;
   }

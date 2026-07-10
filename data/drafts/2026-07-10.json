@@ -1,111 +1,111 @@
 {
   "date": "2026-07-10",
   "status": "draft",
-  "generatedAt": "2026-07-10T03:03:06.178Z",
+  "generatedAt": "2026-07-10T03:17:30.317Z",
   "disclaimer": "이 리포트는 투자 권유가 아니라 정보 확인과 투자 논리 검증을 위한 자동 초안입니다.",
   "keyChanges": [
     {
       "relatedCompanies": [
-        "sk-hynix"
+        "hyundai-mobis"
       ],
-      "event": "투자설명서",
-      "eventDate": "2026-07-10",
-      "impact": "SK하이닉스 공시: 투자설명서",
+      "event": "4월 5주 주요 제조업 전망",
+      "eventDate": "2026-04-28",
+      "impact": "말함 □ 현대모비스 1분기 실적 발표 - 매출액: 15조 5,605억 원(지난해 동기 대비 +5.5%) - 영업이익: 8,026억... 1척을 수주했다고 22일 공시함. 계약 금액은 5,148억 원. HD현대중공업은 2029년 8월까지 선박들을 인도할 예정... ",
       "judgment": "긍정",
       "horizon": "장기 경쟁력 변화",
       "sourceIds": [
-        "dart-sk-hynix-20260710000012"
+        "naver-hyundai-mobis-2026-07-10-4"
       ]
     },
     {
       "relatedCompanies": [
         "sk-hynix"
       ],
-      "event": "[발행조건확정]증권신고서(지분증권)",
-      "eventDate": "2026-07-10",
-      "impact": "SK하이닉스 공시: [발행조건확정]증권신고서(지분증권)",
+      "event": "‘누가 먼저 돈 버나’… 착공·발주·매출 순서로 갈린다 [메가프로젝...",
+      "eventDate": "2026-07-05",
+      "impact": "건설·전력·용수·후공정·AI 부품 등 주변 산업의 실적 개선으로 이어질지가 증시 머니무브의 핵심 변수라는 설명이다. 삼성전자와 SK하이닉스가 대규모 중장기 투자 계획을 제시했지만 공시상으로는 변동 가능성과... ",
       "judgment": "긍정",
       "horizon": "장기 경쟁력 변화",
       "sourceIds": [
-        "dart-sk-hynix-20260710000010"
+        "naver-sk-hynix-2026-07-10-5"
       ]
     },
     {
       "relatedCompanies": [
-        "sk-hynix"
+        "hd-hyundai-electric"
       ],
-      "event": "[기재정정]주요사항보고서(유상증자결정)",
-      "eventDate": "2026-07-10",
-      "impact": "SK하이닉스 공시: [기재정정]주요사항보고서(유상증자결정)",
+      "event": "로봇·산업용·협동로봇 관련주, '함박웃음' 앤로보틱스·한라캐스트·오...",
+      "eventDate": "2026-03-24",
+      "impact": "2% 증가했다고 지난 14일 공시했다. 특히 베어링 부문 매출이 반도체 업황 회복과 대만 고객사향 수출 확대에 힘입어 48% 증가하며 실적을 이끌었다. 로봇·모빌리티용 구동모듈 개발도 강화하고 있다. 현대자동차그룹... ",
       "judgment": "긍정",
       "horizon": "장기 경쟁력 변화",
       "sourceIds": [
-        "dart-sk-hynix-20260710000008"
+        "naver-hd-hyundai-electric-2026-07-10-5"
       ]
     },
     {
       "relatedCompanies": [
-        "sk-hynix"
+        "hd-hyundai-electric"
       ],
-      "event": "[기재정정]주요사항보고서(해외증권시장주권등상장결정)",
-      "eventDate": "2026-07-10",
-      "impact": "SK하이닉스 공시: [기재정정]주요사항보고서(해외증권시장주권등상장결정)",
+      "event": "로봇·산업용·협동로봇 관련주, '싱글벙글' 앤로보틱스·아이엘·휴림로...",
+      "eventDate": "2026-03-17",
+      "impact": "2% 증가했다고 지난 14일 공시했다. 특히 베어링 부문 매출이 반도체 업황 회복과 대만 고객사향 수출 확대에 힘입어 48% 증가하며 실적을 이끌었다. 로봇·모빌리티용 구동모듈 개발도 강화하고 있다. 현대자동차그룹... ",
       "judgment": "긍정",
       "horizon": "장기 경쟁력 변화",
       "sourceIds": [
-        "dart-sk-hynix-20260710000002"
-      ]
-    },
-    {
-      "relatedCompanies": [
-        "sk-hynix"
-      ],
-      "event": "[기재정정]증권예탁증권(DR)발행결정              ",
-      "eventDate": "2026-07-10",
-      "impact": "SK하이닉스 공시: [기재정정]증권예탁증권(DR)발행결정              ",
-      "judgment": "긍정",
-      "horizon": "장기 경쟁력 변화",
-      "sourceIds": [
-        "dart-sk-hynix-20260710800023"
-      ]
-    },
-    {
-      "relatedCompanies": [
-        "sk-hynix"
-      ],
-      "event": "효력발생안내( 2026.6.30. 제출 증권신고서(지분증권) )",
-      "eventDate": "2026-07-10",
-      "impact": "SK하이닉스 공시: 효력발생안내( 2026.6.30. 제출 증권신고서(지분증권) )",
-      "judgment": "긍정",
-      "horizon": "장기 경쟁력 변화",
-      "sourceIds": [
-        "dart-sk-hynix-20260630100041"
-      ]
-    },
-    {
-      "relatedCompanies": [
-        "samsung-electronics"
-      ],
-      "event": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "eventDate": "2026-07-10",
-      "impact": "삼성전자 공시: 임원ㆍ주요주주특정증권등소유상황보고서",
-      "judgment": "긍정",
-      "horizon": "장기 경쟁력 변화",
-      "sourceIds": [
-        "dart-samsung-electronics-20260710000211"
+        "naver-hd-hyundai-electric-2026-07-10-9"
       ]
     },
     {
       "relatedCompanies": [
         "doosan-enerbility"
       ],
-      "event": "기업설명회(IR)개최(안내공시)              ",
-      "eventDate": "2026-07-10",
-      "impact": "두산에너빌리티 공시: 기업설명회(IR)개최(안내공시)              ",
+      "event": "두산, AI CCL 증설에 실적 재편…고점 8.68% 아래",
+      "eventDate": "2026-05-08",
+      "impact": "로봇과 피지컬 AI는 보조 재료다. 두산로보틱스는 협동로봇을 기반으로 산업 자동화 수요와 연결돼... 속도, 두산에너빌리티의 전력 인프라 수주 지속성, 연결 자회사 실적 변동성이 2026년 이후 EPS와 ROE의 핵심... ",
       "judgment": "긍정",
       "horizon": "장기 경쟁력 변화",
       "sourceIds": [
-        "dart-doosan-enerbility-20260710800328"
+        "naver-doosan-enerbility-2026-07-10-3"
+      ]
+    },
+    {
+      "relatedCompanies": [
+        "rainbow-robotics"
+      ],
+      "event": "로봇·산업용·협동로봇 관련주, '함박웃음' 와이투솔루션·휴림로봇·원...",
+      "eventDate": "2026-03-10",
+      "impact": "14일 공시했다. 특히 베어링 부문 매출이 반도체 업황 회복과 대만 고객사향 수출 확대에 힘입어 48% 증가하며 실적을 이끌었다. 로봇·모빌리티용 구동모듈 개발도 강화하고 있다. 현대자동차그룹 로보틱스랩의 신개념... ",
+      "judgment": "긍정",
+      "horizon": "장기 경쟁력 변화",
+      "sourceIds": [
+        "naver-rainbow-robotics-2026-07-10-7"
+      ]
+    },
+    {
+      "relatedCompanies": [
+        "rainbow-robotics"
+      ],
+      "event": "로봇·산업용·협동로봇 관련주, '맑고 쾌청' 휴림로봇·퍼스텍·LIG넥스...",
+      "eventDate": "2026-03-05",
+      "impact": "14일 공시했다. 특히 베어링 부문 매출이 반도체 업황 회복과 대만 고객사향 수출 확대에 힘입어 48% 증가하며 실적을 이끌었다. 로봇·모빌리티용 구동모듈 개발도 강화하고 있다. 현대자동차그룹 로보틱스랩의 신개념... ",
+      "judgment": "긍정",
+      "horizon": "장기 경쟁력 변화",
+      "sourceIds": [
+        "naver-rainbow-robotics-2026-07-10-8"
+      ]
+    },
+    {
+      "relatedCompanies": [
+        "posco-holdings"
+      ],
+      "event": "2차전지 관련주, '맑음' 나인테크·글로벌에스엠·대성하이텍... '흐림' ...",
+      "eventDate": "2026-02-20",
+      "impact": "ESS(전력저장장치) 과제 수주 이후 양산을 통해 매출 확대에 나서고 있다. POSCO홀딩스는 호주의 대표... 2023년 롯데그룹에 편입되었으며, 2차전지·AI 반도체·ESS·첨단 인쇄회로 분야로 사업을 확장 중이다. 압도적인... ",
+      "judgment": "긍정",
+      "horizon": "장기 경쟁력 변화",
+      "sourceIds": [
+        "naver-posco-holdings-2026-07-10-6"
       ]
     }
   ],
@@ -125,19 +125,19 @@
     {
       "companyId": "hanmi-semiconductor",
       "companyName": "한미반도체",
-      "grade": "유지",
+      "grade": "강화",
       "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
     },
     {
       "companyId": "hd-hyundai-electric",
       "companyName": "HD현대일렉트릭",
-      "grade": "유지",
+      "grade": "강화",
       "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
     },
     {
       "companyId": "ls-electric",
       "companyName": "LS ELECTRIC",
-      "grade": "유지",
+      "grade": "강화",
       "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
     },
     {
@@ -149,31 +149,31 @@
     {
       "companyId": "hyundai-motor",
       "companyName": "현대차",
-      "grade": "유지",
+      "grade": "강화",
       "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
     },
     {
       "companyId": "hyundai-mobis",
       "companyName": "현대모비스",
-      "grade": "유지",
+      "grade": "강화",
       "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
     },
     {
       "companyId": "rainbow-robotics",
       "companyName": "레인보우로보틱스",
-      "grade": "유지",
+      "grade": "강화",
       "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
     },
     {
       "companyId": "doosan-robotics",
       "companyName": "두산로보틱스",
-      "grade": "유지",
+      "grade": "강화",
       "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
     },
     {
       "companyId": "posco-holdings",
       "companyName": "POSCO홀딩스",
-      "grade": "유지",
+      "grade": "강화",
       "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
     },
     {
@@ -185,19 +185,19 @@
     {
       "companyId": "hd-hyundai",
       "companyName": "HD현대",
-      "grade": "유지",
+      "grade": "강화",
       "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
     },
     {
       "companyId": "lg-electronics",
       "companyName": "LG전자",
-      "grade": "유지",
+      "grade": "강화",
       "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
     },
     {
       "companyId": "hanwha-aerospace",
       "companyName": "한화에어로스페이스",
-      "grade": "유지",
+      "grade": "강화",
       "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
     }
   ],
@@ -277,12 +277,12 @@
       "companyId": "sk-hynix",
       "companyName": "SK하이닉스",
       "coreRole": "AI 반도체 병목, HBM 및 고성능 메모리",
-      "todayChange": "투자설명서",
+      "todayChange": "‘누가 먼저 돈 버나’… 착공·발주·매출 순서로 갈린다 [메가프로젝...",
       "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
       "interestChange": "상향",
       "topSourceIds": [
-        "dart-sk-hynix-20260710000012"
+        "naver-sk-hynix-2026-07-10-5"
       ]
     },
     {
@@ -301,93 +301,109 @@
       "companyId": "hanmi-semiconductor",
       "companyName": "한미반도체",
       "coreRole": "AI 반도체 병목, 첨단 패키징과 후공정, 반도체 장비",
-      "todayChange": "중대한 변화 없음",
-      "investmentStatus": "유지",
+      "todayChange": "HBM(고대역폭메모리) 관련주, '봄꽃만개' 한화비전·고영·국전약품·테...",
+      "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
-      "interestChange": "유지",
-      "topSourceIds": []
+      "interestChange": "상향",
+      "topSourceIds": [
+        "naver-hanmi-semiconductor-2026-07-10-5"
+      ]
     },
     {
       "companyId": "hd-hyundai-electric",
       "companyName": "HD현대일렉트릭",
       "coreRole": "전력 인프라 병목, 초고압 변압기, 전력 자동화",
-      "todayChange": "중대한 변화 없음",
-      "investmentStatus": "유지",
+      "todayChange": "로봇·산업용·협동로봇 관련주, '함박웃음' 앤로보틱스·한라캐스트·오...",
+      "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
-      "interestChange": "유지",
-      "topSourceIds": []
+      "interestChange": "상향",
+      "topSourceIds": [
+        "naver-hd-hyundai-electric-2026-07-10-5"
+      ]
     },
     {
       "companyId": "ls-electric",
       "companyName": "LS ELECTRIC",
       "coreRole": "전력 인프라 병목, 전력 자동화, PLC·인버터",
-      "todayChange": "중대한 변화 없음",
-      "investmentStatus": "유지",
+      "todayChange": "[증시키워드] 삼성SDS 상한가·SK하이닉스 급등…IT서비스·반도체 관심...",
+      "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
-      "interestChange": "유지",
-      "topSourceIds": []
+      "interestChange": "상향",
+      "topSourceIds": [
+        "naver-ls-electric-2026-07-10-1"
+      ]
     },
     {
       "companyId": "doosan-enerbility",
       "companyName": "두산에너빌리티",
       "coreRole": "전력 인프라 병목, 원전 및 발전설비",
-      "todayChange": "기업설명회(IR)개최(안내공시)              ",
+      "todayChange": "두산, AI CCL 증설에 실적 재편…고점 8.68% 아래",
       "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
       "interestChange": "상향",
       "topSourceIds": [
-        "dart-doosan-enerbility-20260710800328"
+        "naver-doosan-enerbility-2026-07-10-3"
       ]
     },
     {
       "companyId": "hyundai-motor",
       "companyName": "현대차",
       "coreRole": "제조업과 피지컬 AI, 자동차",
-      "todayChange": "중대한 변화 없음",
-      "investmentStatus": "유지",
+      "todayChange": "6월 4주 주요 제조업 전망",
+      "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
-      "interestChange": "유지",
-      "topSourceIds": []
+      "interestChange": "상향",
+      "topSourceIds": [
+        "naver-hyundai-motor-2026-07-10-6"
+      ]
     },
     {
       "companyId": "hyundai-mobis",
       "companyName": "현대모비스",
       "coreRole": "제조업과 피지컬 AI, 자동차 부품",
-      "todayChange": "중대한 변화 없음",
-      "investmentStatus": "유지",
+      "todayChange": "4월 5주 주요 제조업 전망",
+      "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
-      "interestChange": "유지",
-      "topSourceIds": []
+      "interestChange": "상향",
+      "topSourceIds": [
+        "naver-hyundai-mobis-2026-07-10-4"
+      ]
     },
     {
       "companyId": "rainbow-robotics",
       "companyName": "레인보우로보틱스",
       "coreRole": "제조업과 피지컬 AI, 로봇 본체",
-      "todayChange": "중대한 변화 없음",
-      "investmentStatus": "유지",
+      "todayChange": "로봇·산업용·협동로봇 관련주, '함박웃음' 와이투솔루션·휴림로봇·원...",
+      "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
-      "interestChange": "유지",
-      "topSourceIds": []
+      "interestChange": "상향",
+      "topSourceIds": [
+        "naver-rainbow-robotics-2026-07-10-7"
+      ]
     },
     {
       "companyId": "doosan-robotics",
       "companyName": "두산로보틱스",
       "coreRole": "제조업과 피지컬 AI, 협동로봇",
-      "todayChange": "중대한 변화 없음",
-      "investmentStatus": "유지",
+      "todayChange": "대한조선, 1분기 영업익 826억 원 '18.5%↑'…LS일렉트릭, 3100억 원 규모...",
+      "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
-      "interestChange": "유지",
-      "topSourceIds": []
+      "interestChange": "상향",
+      "topSourceIds": [
+        "naver-doosan-robotics-2026-07-10-6"
+      ]
     },
     {
       "companyId": "posco-holdings",
       "companyName": "POSCO홀딩스",
       "coreRole": "제조업과 피지컬 AI, 철강",
-      "todayChange": "중대한 변화 없음",
-      "investmentStatus": "유지",
+      "todayChange": "2차전지 관련주, '맑음' 나인테크·글로벌에스엠·대성하이텍... '흐림' ...",
+      "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
-      "interestChange": "유지",
-      "topSourceIds": []
+      "interestChange": "상향",
+      "topSourceIds": [
+        "naver-posco-holdings-2026-07-10-6"
+      ]
     },
     {
       "companyId": "posco-dx",
@@ -403,31 +419,37 @@
       "companyId": "hd-hyundai",
       "companyName": "HD현대",
       "coreRole": "제조업과 피지컬 AI, 조선, 건설기계",
-      "todayChange": "중대한 변화 없음",
-      "investmentStatus": "유지",
+      "todayChange": "[지방선거, 정책 수혜 기업 (전국)] 돈이 흐르는 곳?… 반도체·재건축·...",
+      "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
-      "interestChange": "유지",
-      "topSourceIds": []
+      "interestChange": "상향",
+      "topSourceIds": [
+        "naver-hd-hyundai-2026-07-10-3"
+      ]
     },
     {
       "companyId": "lg-electronics",
       "companyName": "LG전자",
       "coreRole": "제조업과 피지컬 AI, 로봇, 스마트팩토리",
-      "todayChange": "중대한 변화 없음",
-      "investmentStatus": "유지",
+      "todayChange": "4월 2주 주요 제조업 전망",
+      "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
-      "interestChange": "유지",
-      "topSourceIds": []
+      "interestChange": "상향",
+      "topSourceIds": [
+        "naver-lg-electronics-2026-07-10-9"
+      ]
     },
     {
       "companyId": "hanwha-aerospace",
       "companyName": "한화에어로스페이스",
       "coreRole": "제조업과 피지컬 AI, 방산, 항공우주",
-      "todayChange": "중대한 변화 없음",
-      "investmentStatus": "유지",
+      "todayChange": "5월 1주 주요 제조업 전망",
+      "investmentStatus": "강화",
       "valuationBurden": "판단 보류",
-      "interestChange": "유지",
-      "topSourceIds": []
+      "interestChange": "상향",
+      "topSourceIds": [
+        "naver-hanwha-aerospace-2026-07-10-2"
+      ]
     }
   ],
   "valuationChecks": [
@@ -663,12 +685,12 @@
         "companyId": "sk-hynix",
         "companyName": "SK하이닉스",
         "coreRole": "AI 반도체 병목, HBM 및 고성능 메모리",
-        "todayChange": "투자설명서",
+        "todayChange": "‘누가 먼저 돈 버나’… 착공·발주·매출 순서로 갈린다 [메가프로젝...",
         "investmentStatus": "강화",
         "valuationBurden": "판단 보류",
         "interestChange": "상향",
         "topSourceIds": [
-          "dart-sk-hynix-20260710000012"
+          "naver-sk-hynix-2026-07-10-5"
         ]
       },
       {
@@ -684,15 +706,39 @@
         ]
       },
       {
-        "companyId": "doosan-enerbility",
-        "companyName": "두산에너빌리티",
-        "coreRole": "전력 인프라 병목, 원전 및 발전설비",
-        "todayChange": "기업설명회(IR)개최(안내공시)              ",
+        "companyId": "hanmi-semiconductor",
+        "companyName": "한미반도체",
+        "coreRole": "AI 반도체 병목, 첨단 패키징과 후공정, 반도체 장비",
+        "todayChange": "HBM(고대역폭메모리) 관련주, '봄꽃만개' 한화비전·고영·국전약품·테...",
         "investmentStatus": "강화",
         "valuationBurden": "판단 보류",
         "interestChange": "상향",
         "topSourceIds": [
-          "dart-doosan-enerbility-20260710800328"
+          "naver-hanmi-semiconductor-2026-07-10-5"
+        ]
+      },
+      {
+        "companyId": "hd-hyundai-electric",
+        "companyName": "HD현대일렉트릭",
+        "coreRole": "전력 인프라 병목, 초고압 변압기, 전력 자동화",
+        "todayChange": "로봇·산업용·협동로봇 관련주, '함박웃음' 앤로보틱스·한라캐스트·오...",
+        "investmentStatus": "강화",
+        "valuationBurden": "판단 보류",
+        "interestChange": "상향",
+        "topSourceIds": [
+          "naver-hd-hyundai-electric-2026-07-10-5"
+        ]
+      },
+      {
+        "companyId": "ls-electric",
+        "companyName": "LS ELECTRIC",
+        "coreRole": "전력 인프라 병목, 전력 자동화, PLC·인버터",
+        "todayChange": "[증시키워드] 삼성SDS 상한가·SK하이닉스 급등…IT서비스·반도체 관심...",
+        "investmentStatus": "강화",
+        "valuationBurden": "판단 보류",
+        "interestChange": "상향",
+        "topSourceIds": [
+          "naver-ls-electric-2026-07-10-1"
         ]
       }
     ],
@@ -701,12 +747,12 @@
         "companyId": "sk-hynix",
         "companyName": "SK하이닉스",
         "coreRole": "AI 반도체 병목, HBM 및 고성능 메모리",
-        "todayChange": "투자설명서",
+        "todayChange": "‘누가 먼저 돈 버나’… 착공·발주·매출 순서로 갈린다 [메가프로젝...",
         "investmentStatus": "강화",
         "valuationBurden": "판단 보류",
         "interestChange": "상향",
         "topSourceIds": [
-          "dart-sk-hynix-20260710000012"
+          "naver-sk-hynix-2026-07-10-5"
         ]
       },
       {
@@ -725,31 +771,37 @@
         "companyId": "hanmi-semiconductor",
         "companyName": "한미반도체",
         "coreRole": "AI 반도체 병목, 첨단 패키징과 후공정, 반도체 장비",
-        "todayChange": "중대한 변화 없음",
-        "investmentStatus": "유지",
+        "todayChange": "HBM(고대역폭메모리) 관련주, '봄꽃만개' 한화비전·고영·국전약품·테...",
+        "investmentStatus": "강화",
         "valuationBurden": "판단 보류",
-        "interestChange": "유지",
-        "topSourceIds": []
+        "interestChange": "상향",
+        "topSourceIds": [
+          "naver-hanmi-semiconductor-2026-07-10-5"
+        ]
       },
       {
         "companyId": "ls-electric",
         "companyName": "LS ELECTRIC",
         "coreRole": "전력 인프라 병목, 전력 자동화, PLC·인버터",
-        "todayChange": "중대한 변화 없음",
-        "investmentStatus": "유지",
+        "todayChange": "[증시키워드] 삼성SDS 상한가·SK하이닉스 급등…IT서비스·반도체 관심...",
+        "investmentStatus": "강화",
         "valuationBurden": "판단 보류",
-        "interestChange": "유지",
-        "topSourceIds": []
+        "interestChange": "상향",
+        "topSourceIds": [
+          "naver-ls-electric-2026-07-10-1"
+        ]
       },
       {
         "companyId": "hyundai-motor",
         "companyName": "현대차",
         "coreRole": "제조업과 피지컬 AI, 자동차",
-        "todayChange": "중대한 변화 없음",
-        "investmentStatus": "유지",
+        "todayChange": "6월 4주 주요 제조업 전망",
+        "investmentStatus": "강화",
         "valuationBurden": "판단 보류",
-        "interestChange": "유지",
-        "topSourceIds": []
+        "interestChange": "상향",
+        "topSourceIds": [
+          "naver-hyundai-motor-2026-07-10-6"
+        ]
       }
     ],
     "attractivePrice": [
@@ -757,12 +809,12 @@
         "companyId": "sk-hynix",
         "companyName": "SK하이닉스",
         "coreRole": "AI 반도체 병목, HBM 및 고성능 메모리",
-        "todayChange": "투자설명서",
+        "todayChange": "‘누가 먼저 돈 버나’… 착공·발주·매출 순서로 갈린다 [메가프로젝...",
         "investmentStatus": "강화",
         "valuationBurden": "판단 보류",
         "interestChange": "상향",
         "topSourceIds": [
-          "dart-sk-hynix-20260710000012"
+          "naver-sk-hynix-2026-07-10-5"
         ]
       },
       {
@@ -781,31 +833,37 @@
         "companyId": "hanmi-semiconductor",
         "companyName": "한미반도체",
         "coreRole": "AI 반도체 병목, 첨단 패키징과 후공정, 반도체 장비",
-        "todayChange": "중대한 변화 없음",
-        "investmentStatus": "유지",
+        "todayChange": "HBM(고대역폭메모리) 관련주, '봄꽃만개' 한화비전·고영·국전약품·테...",
+        "investmentStatus": "강화",
         "valuationBurden": "판단 보류",
-        "interestChange": "유지",
-        "topSourceIds": []
+        "interestChange": "상향",
+        "topSourceIds": [
+          "naver-hanmi-semiconductor-2026-07-10-5"
+        ]
       },
       {
         "companyId": "hd-hyundai-electric",
         "companyName": "HD현대일렉트릭",
         "coreRole": "전력 인프라 병목, 초고압 변압기, 전력 자동화",
-        "todayChange": "중대한 변화 없음",
-        "investmentStatus": "유지",
+        "todayChange": "로봇·산업용·협동로봇 관련주, '함박웃음' 앤로보틱스·한라캐스트·오...",
+        "investmentStatus": "강화",
         "valuationBurden": "판단 보류",
-        "interestChange": "유지",
-        "topSourceIds": []
+        "interestChange": "상향",
+        "topSourceIds": [
+          "naver-hd-hyundai-electric-2026-07-10-5"
+        ]
       },
       {
         "companyId": "ls-electric",
         "companyName": "LS ELECTRIC",
         "coreRole": "전력 인프라 병목, 전력 자동화, PLC·인버터",
-        "todayChange": "중대한 변화 없음",
-        "investmentStatus": "유지",
+        "todayChange": "[증시키워드] 삼성SDS 상한가·SK하이닉스 급등…IT서비스·반도체 관심...",
+        "investmentStatus": "강화",
         "valuationBurden": "판단 보류",
-        "interestChange": "유지",
-        "topSourceIds": []
+        "interestChange": "상향",
+        "topSourceIds": [
+          "naver-ls-electric-2026-07-10-1"
+        ]
       }
     ]
   },
@@ -861,7 +919,7 @@
     }
   ],
   "finalSummary": {
-    "strengthened": "투자설명서",
+    "strengthened": "4월 5주 주요 제조업 전망",
     "weakened": "중대한 변화 없음",
     "mostNotable": "SK하이닉스",
     "overheated": "판단 보류",
@@ -870,15 +928,92 @@
     "removalReview": "없음"
   },
   "sourceIds": [
+    "naver-hyundai-mobis-2026-07-10-4",
+    "naver-sk-hynix-2026-07-10-5",
+    "naver-hd-hyundai-electric-2026-07-10-5",
+    "naver-hd-hyundai-electric-2026-07-10-9",
+    "naver-doosan-enerbility-2026-07-10-3",
+    "naver-rainbow-robotics-2026-07-10-7",
+    "naver-rainbow-robotics-2026-07-10-8",
+    "naver-posco-holdings-2026-07-10-6",
+    "naver-posco-holdings-2026-07-10-7",
+    "naver-hd-hyundai-2026-07-10-3",
+    "naver-hanmi-semiconductor-2026-07-10-5",
+    "naver-lg-electronics-2026-07-10-9",
+    "naver-hanwha-aerospace-2026-07-10-2",
     "dart-sk-hynix-20260710000012",
     "dart-sk-hynix-20260710000010",
     "dart-sk-hynix-20260710000008",
     "dart-sk-hynix-20260710000002",
     "dart-sk-hynix-20260710800023",
     "dart-sk-hynix-20260630100041",
+    "naver-sk-hynix-2026-07-10-2",
     "dart-samsung-electronics-20260710000211",
+    "naver-hanmi-semiconductor-2026-07-10-2",
+    "naver-hanmi-semiconductor-2026-07-10-3",
+    "naver-hd-hyundai-electric-2026-07-10-2",
+    "naver-ls-electric-2026-07-10-1",
     "dart-doosan-enerbility-20260710800328",
-    "dart-doosan-enerbility-20260710800321"
+    "dart-doosan-enerbility-20260710800321",
+    "naver-hyundai-mobis-2026-07-10-8",
+    "naver-doosan-robotics-2026-07-10-6",
+    "naver-hd-hyundai-2026-07-10-6",
+    "naver-hanwha-aerospace-2026-07-10-3",
+    "naver-hanwha-aerospace-2026-07-10-8",
+    "naver-sk-hynix-2026-07-10-3",
+    "naver-sk-hynix-2026-07-10-8",
+    "naver-ls-electric-2026-07-10-2",
+    "naver-hyundai-motor-2026-07-10-6",
+    "naver-hyundai-motor-2026-07-10-9",
+    "naver-rainbow-robotics-2026-07-10-3",
+    "naver-sk-hynix-2026-07-10-6",
+    "naver-hanmi-semiconductor-2026-07-10-6",
+    "naver-hanmi-semiconductor-2026-07-10-8",
+    "naver-ls-electric-2026-07-10-6",
+    "naver-ls-electric-2026-07-10-7",
+    "naver-ls-electric-2026-07-10-9",
+    "naver-hyundai-motor-2026-07-10-3",
+    "naver-hyundai-mobis-2026-07-10-9",
+    "naver-rainbow-robotics-2026-07-10-9",
+    "naver-doosan-robotics-2026-07-10-0",
+    "naver-sk-hynix-2026-07-10-4",
+    "naver-hanmi-semiconductor-2026-07-10-7",
+    "naver-hanmi-semiconductor-2026-07-10-9",
+    "naver-hd-hyundai-electric-2026-07-10-8",
+    "naver-doosan-enerbility-2026-07-10-4",
+    "naver-doosan-enerbility-2026-07-10-5",
+    "naver-doosan-enerbility-2026-07-10-6",
+    "naver-doosan-enerbility-2026-07-10-9",
+    "naver-hyundai-mobis-2026-07-10-7",
+    "naver-doosan-robotics-2026-07-10-9",
+    "naver-hd-hyundai-2026-07-10-5",
+    "naver-sk-hynix-2026-07-10-1",
+    "naver-doosan-enerbility-2026-07-10-1",
+    "naver-sk-hynix-2026-07-10-7",
+    "naver-sk-hynix-2026-07-10-9",
+    "naver-hanmi-semiconductor-2026-07-10-1",
+    "naver-hanmi-semiconductor-2026-07-10-4",
+    "naver-hd-hyundai-electric-2026-07-10-3",
+    "naver-hd-hyundai-electric-2026-07-10-4",
+    "naver-hd-hyundai-electric-2026-07-10-6",
+    "naver-hd-hyundai-electric-2026-07-10-7",
+    "naver-doosan-enerbility-2026-07-10-7",
+    "naver-doosan-enerbility-2026-07-10-8",
+    "naver-hyundai-motor-2026-07-10-5",
+    "naver-hyundai-mobis-2026-07-10-1",
+    "naver-hyundai-mobis-2026-07-10-5",
+    "naver-posco-holdings-2026-07-10-9",
+    "naver-hanwha-aerospace-2026-07-10-6",
+    "naver-sk-hynix-2026-07-10-0",
+    "naver-ls-electric-2026-07-10-3",
+    "naver-hyundai-motor-2026-07-10-7",
+    "naver-hyundai-mobis-2026-07-10-3",
+    "naver-posco-holdings-2026-07-10-0",
+    "naver-posco-holdings-2026-07-10-2",
+    "naver-posco-holdings-2026-07-10-3",
+    "naver-posco-holdings-2026-07-10-4",
+    "naver-posco-holdings-2026-07-10-5",
+    "naver-posco-holdings-2026-07-10-8"
   ],
   "collectionErrors": []
 }

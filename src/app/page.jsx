@@ -1,6 +1,6 @@
-import { loadReportsFromDisk, getLatestReport } from "../lib/report-store.mjs";
 import fs from "node:fs";
 import path from "node:path";
+import { getLatestReport, loadReportsFromDisk, loadSourcesForDate } from "../lib/report-store.mjs";
 
 function loadWatchlist() {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), "config", "watchlist.json"), "utf8"));
@@ -19,45 +19,36 @@ function Section({ title, children }) {
   );
 }
 
-function Empty({ children = "표시할 데이터가 없습니다." }) {
+function Empty({ children = "No data available." }) {
   return <p className="empty">{children}</p>;
 }
 
 function statusTone(status) {
-  if (status === "강화" || status === "상향" || status === "긍정") return "good";
-  if (status === "약화" || status === "하향" || status === "부정") return "bad";
-  if (status === "판단 보류" || status === "관찰 필요") return "watch";
+  if (["강화", "상향", "긍정", "approved"].includes(status)) return "good";
+  if (["약화", "하향", "부정"].includes(status)) return "bad";
+  if (["판단 보류", "관찰 필요", "draft"].includes(status)) return "watch";
   return "neutral";
 }
 
 function ReportSummary({ report }) {
   const summary = report.finalSummary ?? {};
+  const cards = [
+    ["Strengthened thesis", summary.strengthened ?? "No major change"],
+    ["Weakened thesis", summary.weakened ?? "No major change"],
+    ["Most notable company", summary.mostNotable ?? "Watch required"],
+    ["Overheated / priced-in", summary.overheated ?? "Judgment hold"],
+    ["Needs observation", summary.watchMore ?? "Watch required"],
+    ["Removal review", summary.removalReview ?? "None"],
+  ];
+
   return (
     <div className="summaryGrid">
-      <div>
-        <span>오늘 투자 논리를 강화한 사건</span>
-        <strong>{summary.strengthened ?? "중대한 변화 없음"}</strong>
-      </div>
-      <div>
-        <span>오늘 투자 논리를 약화한 사건</span>
-        <strong>{summary.weakened ?? "중대한 변화 없음"}</strong>
-      </div>
-      <div>
-        <span>가장 주목할 기업</span>
-        <strong>{summary.mostNotable ?? "관찰 필요"}</strong>
-      </div>
-      <div>
-        <span>과열 또는 기대 선반영 주의 기업</span>
-        <strong>{summary.overheated ?? "판단 보류"}</strong>
-      </div>
-      <div>
-        <span>추가 매수보다 관찰이 필요한 기업</span>
-        <strong>{summary.watchMore ?? "관찰 필요"}</strong>
-      </div>
-      <div>
-        <span>기존 관찰 대상 제외 검토</span>
-        <strong>{summary.removalReview ?? "없음"}</strong>
-      </div>
+      {cards.map(([label, value]) => (
+        <div key={label}>
+          <span>{label}</span>
+          <strong>{value}</strong>
+        </div>
+      ))}
     </div>
   );
 }
@@ -81,19 +72,56 @@ function KeyChanges({ changes }) {
   );
 }
 
+function sortNotableSources(sources, report) {
+  const highlightedIds = new Set(report.keyChanges?.flatMap((change) => change.sourceIds ?? []) ?? []);
+  return [...sources]
+    .sort((a, b) => {
+      const highlightedDelta = Number(highlightedIds.has(b.id)) - Number(highlightedIds.has(a.id));
+      if (highlightedDelta !== 0) return highlightedDelta;
+      return String(b.publishedDate ?? "").localeCompare(String(a.publishedDate ?? ""));
+    })
+    .slice(0, 10);
+}
+
+function NotableSources({ sources, report }) {
+  const notable = sortNotableSources(sources, report);
+  if (!notable.length) {
+    return <Empty>No crawled source metadata is available for this report date.</Empty>;
+  }
+
+  return (
+    <div className="sourceGrid">
+      {notable.map((source) => (
+        <article className="sourceItem" key={source.id}>
+          <div className="changeMeta">
+            <Badge tone={source.sourceType === "disclosure" ? "good" : "neutral"}>{source.sourceType}</Badge>
+            <Badge tone={source.reliability === "low" ? "watch" : "neutral"}>{source.reliability ?? "unknown"}</Badge>
+            <span>{source.publishedDate ?? source.eventDate ?? report.date}</span>
+          </div>
+          <h3>{source.title}</h3>
+          {source.summary ? <p className="sourceSummary">{source.summary}</p> : null}
+          <a className="sourceLink" href={source.url} target="_blank" rel="noreferrer">
+            Open source
+          </a>
+        </article>
+      ))}
+    </div>
+  );
+}
+
 function StockTable({ rows }) {
-  if (!rows?.length) return <Empty>아직 종목별 자동 판정 데이터가 없습니다.</Empty>;
+  if (!rows?.length) return <Empty>No stock status data is available yet.</Empty>;
   return (
     <div className="tableWrap">
       <table>
         <thead>
           <tr>
-            <th>종목</th>
-            <th>핵심 병목 또는 역할</th>
-            <th>오늘의 변화</th>
-            <th>투자 논리 상태</th>
-            <th>밸류에이션 부담</th>
-            <th>관심도 변화</th>
+            <th>Company</th>
+            <th>Core bottleneck or role</th>
+            <th>Today change</th>
+            <th>Thesis status</th>
+            <th>Valuation burden</th>
+            <th>Interest change</th>
           </tr>
         </thead>
         <tbody>
@@ -131,7 +159,7 @@ function PriorityList({ title, rows }) {
           ))}
         </ol>
       ) : (
-        <Empty>선정할 만큼 강한 근거가 아직 없습니다.</Empty>
+        <Empty>There is not enough verified evidence to rank companies.</Empty>
       )}
     </div>
   );
@@ -141,12 +169,13 @@ export default function Home() {
   const reports = loadReportsFromDisk();
   const latest = getLatestReport(reports);
   const watchlist = loadWatchlist();
+  const sources = loadSourcesForDate(latest?.date);
 
   if (!latest) {
     return (
       <main className="page">
-        <h1>한국 AI 산업 병목 투자현황</h1>
-        <Empty>아직 생성된 리포트가 없습니다. GitHub Actions에서 초안 생성을 실행하세요.</Empty>
+        <h1>Korea AI Bottleneck Monitor</h1>
+        <Empty>No report has been generated yet. Run the daily report workflow.</Empty>
       </main>
     );
   }
@@ -156,58 +185,61 @@ export default function Home() {
       <header className="hero">
         <div>
           <p className="eyebrow">Korea AI Bottleneck Monitor</p>
-          <h1>한국 AI·산업 병목 투자현황</h1>
+          <h1>Korea AI and Industrial Bottleneck Dashboard</h1>
           <p>
-            DART 공시, 뉴스 검색, 공개 데이터로 매일 투자 논리를 점검하고 PR 승인 후 확정 리포트로
-            게시합니다.
+            Daily disclosure and news collection, conservative rule-based scoring, and PR approval before publication.
           </p>
         </div>
         <div className="heroMeta">
-          <Badge tone={latest.status === "approved" ? "good" : "watch"}>{latest.status}</Badge>
+          <Badge tone={statusTone(latest.status)}>{latest.status}</Badge>
           <strong>{latest.date}</strong>
-          <span>관찰 종목 {watchlist.length}개</span>
+          <span>{watchlist.length} tracked companies</span>
         </div>
       </header>
 
       <p className="disclaimer">{latest.disclaimer}</p>
 
-      <Section title="최종 요약">
+      <Section title="Final Summary">
         <ReportSummary report={latest} />
       </Section>
 
-      <Section title="오늘의 핵심 변화">
+      <Section title="Key Changes Today">
         <KeyChanges changes={latest.keyChanges} />
       </Section>
 
-      <Section title="종목별 상태 변화">
+      <Section title="Notable Crawled Sources">
+        <NotableSources sources={sources} report={latest} />
+      </Section>
+
+      <Section title="Company Status Table">
         <StockTable rows={latest.stockTable} />
       </Section>
 
-      <Section title="오늘의 우선순위">
+      <Section title="Priority Watchlist">
         <div className="priorityGrid">
-          <PriorityList title="병목 경쟁력" rows={latest.priorityTop5?.bottleneck} />
-          <PriorityList title="피지컬 AI 실현 가능성" rows={latest.priorityTop5?.physicalAi} />
-          <PriorityList title="가격 고려 투자 매력" rows={latest.priorityTop5?.attractivePrice} />
+          <PriorityList title="Strongest bottleneck" rows={latest.priorityTop5?.bottleneck} />
+          <PriorityList title="Physical AI potential" rows={latest.priorityTop5?.physicalAi} />
+          <PriorityList title="Price-aware attractiveness" rows={latest.priorityTop5?.attractivePrice} />
         </div>
       </Section>
 
-      <Section title="투자 논리를 깨뜨릴 수 있는 위험">
+      <Section title="Risks That Can Break The Thesis">
         <div className="riskGrid">
           {latest.riskReview?.map((risk) => (
             <article className="riskItem" key={risk.risk}>
               <Badge tone={statusTone(risk.status)}>{risk.status}</Badge>
               <h3>{risk.risk}</h3>
-              <p>영향 종목: {risk.affectedCompanies?.length ? risk.affectedCompanies.join(", ") : "판단 보류"}</p>
+              <p>Affected companies: {risk.affectedCompanies?.length ? risk.affectedCompanies.join(", ") : "Judgment hold"}</p>
             </article>
           ))}
         </div>
       </Section>
 
-      <Section title="과거 리포트">
+      <Section title="Report History">
         <div className="history">
           {reports.map((report) => (
             <span key={`${report.status}-${report.date}`}>
-              {report.date} <Badge tone={report.status === "approved" ? "good" : "watch"}>{report.status}</Badge>
+              {report.date} <Badge tone={statusTone(report.status)}>{report.status}</Badge>
             </span>
           ))}
         </div>
