@@ -1,6 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
-import { getLatestReport, loadReportsFromDisk, loadSourcesForDate } from "../lib/report-store.mjs";
+import {
+  filterItemsWithinDays,
+  getLatestReport,
+  loadReportsFromDisk,
+  loadSourcesForDate,
+} from "../lib/report-store.mjs";
 
 const DISPLAY_WINDOW_DAYS = 7;
 
@@ -75,6 +80,28 @@ function KeyChanges({ changes }) {
       ))}
     </div>
   );
+}
+
+function buildDisplayReport(report) {
+  const keyChanges = filterItemsWithinDays(report.keyChanges ?? [], report.date, DISPLAY_WINDOW_DAYS);
+  if (keyChanges.length) {
+    return { ...report, keyChanges };
+  }
+
+  return {
+    ...report,
+    keyChanges: [
+      {
+        relatedCompanies: [],
+        event: "No major verified changes in the seven-day window",
+        eventDate: report.date,
+        impact: "Older collected items are hidden from the dashboard. Review data files directly if archival context is needed.",
+        judgment: "중립",
+        horizon: "7-day display window",
+        sourceIds: [],
+      },
+    ],
+  };
 }
 
 function sortNotableSources(sources, report) {
@@ -182,6 +209,7 @@ export default function Home() {
     anchorDate: latest?.date,
     withinDays: DISPLAY_WINDOW_DAYS,
   });
+  const displayReport = latest ? buildDisplayReport(latest) : null;
 
   if (!latest) {
     return (
@@ -217,11 +245,11 @@ export default function Home() {
       </Section>
 
       <Section title="Key Changes Today" kicker="Verified signal priority">
-        <KeyChanges changes={latest.keyChanges} />
+        <KeyChanges changes={displayReport.keyChanges} />
       </Section>
 
       <Section title="Notable Crawled Sources" kicker={`Only sources within ${DISPLAY_WINDOW_DAYS} days are displayed`}>
-        <NotableSources sources={sources} report={latest} />
+        <NotableSources sources={sources} report={displayReport} />
       </Section>
 
       <Section title="Company Status Table" kicker="Bottleneck and valuation view">
