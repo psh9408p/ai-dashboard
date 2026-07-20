@@ -6,8 +6,6 @@ on:
       report_date:
         description: "Report date in YYYY-MM-DD. Defaults to today's UTC date."
         required: false
-  schedule:
-    - cron: "30 22 * * *"
 
 permissions:
   contents: write
