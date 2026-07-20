@@ -1,0 +1,728 @@
+{
+  "date": "2026-07-20",
+  "status": "draft",
+  "generatedAt": "2026-07-20T02:56:50.018Z",
+  "disclaimer": "이 리포트는 투자 권유가 아니라 정보 확인과 투자 논리 검증을 위한 자동 초안입니다.",
+  "keyChanges": [
+    {
+      "relatedCompanies": [],
+      "event": "중대한 변화 없음",
+      "eventDate": "2026-07-20",
+      "impact": "무료 공개 데이터 기준으로 기존 투자 논리를 바꿀 만한 검증된 변화가 발견되지 않았습니다.",
+      "judgment": "중립",
+      "horizon": "장기 경쟁력 변화",
+      "sourceIds": []
+    }
+  ],
+  "bottleneckScores": [
+    {
+      "companyId": "sk-hynix",
+      "companyName": "SK하이닉스",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "samsung-electronics",
+      "companyName": "삼성전자",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "hanmi-semiconductor",
+      "companyName": "한미반도체",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "hd-hyundai-electric",
+      "companyName": "HD현대일렉트릭",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "ls-electric",
+      "companyName": "LS ELECTRIC",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "doosan-enerbility",
+      "companyName": "두산에너빌리티",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "hyundai-motor",
+      "companyName": "현대차",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "hyundai-mobis",
+      "companyName": "현대모비스",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "rainbow-robotics",
+      "companyName": "레인보우로보틱스",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "doosan-robotics",
+      "companyName": "두산로보틱스",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "posco-holdings",
+      "companyName": "POSCO홀딩스",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "posco-dx",
+      "companyName": "POSCO DX",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "hd-hyundai",
+      "companyName": "HD현대",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "lg-electronics",
+      "companyName": "LG전자",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    },
+    {
+      "companyId": "hanwha-aerospace",
+      "companyName": "한화에어로스페이스",
+      "grade": "유지",
+      "rationale": "공시, 뉴스, 공개 가격 데이터를 기준으로 규칙형 점수화했습니다."
+    }
+  ],
+  "physicalAiReview": {
+    "operators": [
+      {
+        "companyId": "hyundai-motor",
+        "companyName": "현대차",
+        "status": "관찰 필요"
+      },
+      {
+        "companyId": "hyundai-mobis",
+        "companyName": "현대모비스",
+        "status": "관찰 필요"
+      },
+      {
+        "companyId": "posco-holdings",
+        "companyName": "POSCO홀딩스",
+        "status": "관찰 필요"
+      },
+      {
+        "companyId": "hd-hyundai",
+        "companyName": "HD현대",
+        "status": "관찰 필요"
+      },
+      {
+        "companyId": "lg-electronics",
+        "companyName": "LG전자",
+        "status": "관찰 필요"
+      },
+      {
+        "companyId": "hanwha-aerospace",
+        "companyName": "한화에어로스페이스",
+        "status": "관찰 필요"
+      }
+    ],
+    "enablers": [
+      {
+        "companyId": "sk-hynix",
+        "companyName": "SK하이닉스",
+        "status": "관찰 필요"
+      },
+      {
+        "companyId": "samsung-electronics",
+        "companyName": "삼성전자",
+        "status": "관찰 필요"
+      },
+      {
+        "companyId": "hanmi-semiconductor",
+        "companyName": "한미반도체",
+        "status": "관찰 필요"
+      },
+      {
+        "companyId": "ls-electric",
+        "companyName": "LS ELECTRIC",
+        "status": "관찰 필요"
+      },
+      {
+        "companyId": "rainbow-robotics",
+        "companyName": "레인보우로보틱스",
+        "status": "관찰 필요"
+      },
+      {
+        "companyId": "doosan-robotics",
+        "companyName": "두산로보틱스",
+        "status": "관찰 필요"
+      },
+      {
+        "companyId": "posco-dx",
+        "companyName": "POSCO DX",
+        "status": "관찰 필요"
+      }
+    ]
+  },
+  "stockTable": [
+    {
+      "companyId": "sk-hynix",
+      "companyName": "SK하이닉스",
+      "coreRole": "AI 반도체 병목, HBM 및 고성능 메모리",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "samsung-electronics",
+      "companyName": "삼성전자",
+      "coreRole": "AI 반도체 병목, 메모리, 파운드리, 첨단 패키징",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "hanmi-semiconductor",
+      "companyName": "한미반도체",
+      "coreRole": "AI 반도체 병목, 첨단 패키징과 후공정, 반도체 장비",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "hd-hyundai-electric",
+      "companyName": "HD현대일렉트릭",
+      "coreRole": "전력 인프라 병목, 초고압 변압기, 전력 자동화",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "ls-electric",
+      "companyName": "LS ELECTRIC",
+      "coreRole": "전력 인프라 병목, 전력 자동화, PLC·인버터",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "doosan-enerbility",
+      "companyName": "두산에너빌리티",
+      "coreRole": "전력 인프라 병목, 원전 및 발전설비",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "hyundai-motor",
+      "companyName": "현대차",
+      "coreRole": "제조업과 피지컬 AI, 자동차",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "hyundai-mobis",
+      "companyName": "현대모비스",
+      "coreRole": "제조업과 피지컬 AI, 자동차 부품",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "rainbow-robotics",
+      "companyName": "레인보우로보틱스",
+      "coreRole": "제조업과 피지컬 AI, 로봇 본체",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "doosan-robotics",
+      "companyName": "두산로보틱스",
+      "coreRole": "제조업과 피지컬 AI, 협동로봇",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "posco-holdings",
+      "companyName": "POSCO홀딩스",
+      "coreRole": "제조업과 피지컬 AI, 철강",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "posco-dx",
+      "companyName": "POSCO DX",
+      "coreRole": "제조업과 피지컬 AI, 디지털 트윈, 산업용 소프트웨어",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "hd-hyundai",
+      "companyName": "HD현대",
+      "coreRole": "제조업과 피지컬 AI, 조선, 건설기계",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "lg-electronics",
+      "companyName": "LG전자",
+      "coreRole": "제조업과 피지컬 AI, 로봇, 스마트팩토리",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    },
+    {
+      "companyId": "hanwha-aerospace",
+      "companyName": "한화에어로스페이스",
+      "coreRole": "제조업과 피지컬 AI, 방산, 항공우주",
+      "todayChange": "중대한 변화 없음",
+      "investmentStatus": "유지",
+      "valuationBurden": "판단 보류",
+      "interestChange": "유지",
+      "topSourceIds": []
+    }
+  ],
+  "valuationChecks": [
+    {
+      "companyId": "sk-hynix",
+      "companyName": "SK하이닉스",
+      "ticker": "000660.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "samsung-electronics",
+      "companyName": "삼성전자",
+      "ticker": "005930.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "hanmi-semiconductor",
+      "companyName": "한미반도체",
+      "ticker": "042700.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "hd-hyundai-electric",
+      "companyName": "HD현대일렉트릭",
+      "ticker": "267260.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "ls-electric",
+      "companyName": "LS ELECTRIC",
+      "ticker": "010120.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "doosan-enerbility",
+      "companyName": "두산에너빌리티",
+      "ticker": "034020.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "hyundai-motor",
+      "companyName": "현대차",
+      "ticker": "005380.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "hyundai-mobis",
+      "companyName": "현대모비스",
+      "ticker": "012330.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "rainbow-robotics",
+      "companyName": "레인보우로보틱스",
+      "ticker": "277810.KQ",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "doosan-robotics",
+      "companyName": "두산로보틱스",
+      "ticker": "454910.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "posco-holdings",
+      "companyName": "POSCO홀딩스",
+      "ticker": "005490.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "posco-dx",
+      "companyName": "POSCO DX",
+      "ticker": "022100.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "hd-hyundai",
+      "companyName": "HD현대",
+      "ticker": "267250.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "lg-electronics",
+      "companyName": "LG전자",
+      "ticker": "066570.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    },
+    {
+      "companyId": "hanwha-aerospace",
+      "companyName": "한화에어로스페이스",
+      "ticker": "012450.KS",
+      "currentPrice": null,
+      "dayChangePercent": null,
+      "oneMonth": "판단 보류",
+      "threeMonths": "판단 보류",
+      "oneYear": "판단 보류",
+      "per": null,
+      "pbr": null,
+      "evEbitda": null,
+      "valuationBurden": "판단 보류",
+      "note": "무료 공개 데이터에서 안정적으로 확인되는 범위만 표시합니다. 자동 가격 연동은 후속 API 어댑터에서 교체 가능합니다."
+    }
+  ],
+  "priorityTop5": {
+    "bottleneck": [],
+    "physicalAi": [
+      {
+        "companyId": "sk-hynix",
+        "companyName": "SK하이닉스",
+        "coreRole": "AI 반도체 병목, HBM 및 고성능 메모리",
+        "todayChange": "중대한 변화 없음",
+        "investmentStatus": "유지",
+        "valuationBurden": "판단 보류",
+        "interestChange": "유지",
+        "topSourceIds": []
+      },
+      {
+        "companyId": "samsung-electronics",
+        "companyName": "삼성전자",
+        "coreRole": "AI 반도체 병목, 메모리, 파운드리, 첨단 패키징",
+        "todayChange": "중대한 변화 없음",
+        "investmentStatus": "유지",
+        "valuationBurden": "판단 보류",
+        "interestChange": "유지",
+        "topSourceIds": []
+      },
+      {
+        "companyId": "hanmi-semiconductor",
+        "companyName": "한미반도체",
+        "coreRole": "AI 반도체 병목, 첨단 패키징과 후공정, 반도체 장비",
+        "todayChange": "중대한 변화 없음",
+        "investmentStatus": "유지",
+        "valuationBurden": "판단 보류",
+        "interestChange": "유지",
+        "topSourceIds": []
+      },
+      {
+        "companyId": "ls-electric",
+        "companyName": "LS ELECTRIC",
+        "coreRole": "전력 인프라 병목, 전력 자동화, PLC·인버터",
+        "todayChange": "중대한 변화 없음",
+        "investmentStatus": "유지",
+        "valuationBurden": "판단 보류",
+        "interestChange": "유지",
+        "topSourceIds": []
+      },
+      {
+        "companyId": "hyundai-motor",
+        "companyName": "현대차",
+        "coreRole": "제조업과 피지컬 AI, 자동차",
+        "todayChange": "중대한 변화 없음",
+        "investmentStatus": "유지",
+        "valuationBurden": "판단 보류",
+        "interestChange": "유지",
+        "topSourceIds": []
+      }
+    ],
+    "attractivePrice": [
+      {
+        "companyId": "sk-hynix",
+        "companyName": "SK하이닉스",
+        "coreRole": "AI 반도체 병목, HBM 및 고성능 메모리",
+        "todayChange": "중대한 변화 없음",
+        "investmentStatus": "유지",
+        "valuationBurden": "판단 보류",
+        "interestChange": "유지",
+        "topSourceIds": []
+      },
+      {
+        "companyId": "samsung-electronics",
+        "companyName": "삼성전자",
+        "coreRole": "AI 반도체 병목, 메모리, 파운드리, 첨단 패키징",
+        "todayChange": "중대한 변화 없음",
+        "investmentStatus": "유지",
+        "valuationBurden": "판단 보류",
+        "interestChange": "유지",
+        "topSourceIds": []
+      },
+      {
+        "companyId": "hanmi-semiconductor",
+        "companyName": "한미반도체",
+        "coreRole": "AI 반도체 병목, 첨단 패키징과 후공정, 반도체 장비",
+        "todayChange": "중대한 변화 없음",
+        "investmentStatus": "유지",
+        "valuationBurden": "판단 보류",
+        "interestChange": "유지",
+        "topSourceIds": []
+      },
+      {
+        "companyId": "hd-hyundai-electric",
+        "companyName": "HD현대일렉트릭",
+        "coreRole": "전력 인프라 병목, 초고압 변압기, 전력 자동화",
+        "todayChange": "중대한 변화 없음",
+        "investmentStatus": "유지",
+        "valuationBurden": "판단 보류",
+        "interestChange": "유지",
+        "topSourceIds": []
+      },
+      {
+        "companyId": "ls-electric",
+        "companyName": "LS ELECTRIC",
+        "coreRole": "전력 인프라 병목, 전력 자동화, PLC·인버터",
+        "todayChange": "중대한 변화 없음",
+        "investmentStatus": "유지",
+        "valuationBurden": "판단 보류",
+        "interestChange": "유지",
+        "topSourceIds": []
+      }
+    ]
+  },
+  "riskReview": [
+    {
+      "risk": "HBM 공급과잉",
+      "status": "중대한 변화 없음",
+      "affectedCompanies": [
+        "sk-hynix",
+        "samsung-electronics",
+        "hanmi-semiconductor"
+      ]
+    },
+    {
+      "risk": "AI 데이터센터 투자 둔화",
+      "status": "중대한 변화 없음",
+      "affectedCompanies": [
+        "sk-hynix",
+        "samsung-electronics",
+        "hanmi-semiconductor",
+        "hd-hyundai-electric",
+        "ls-electric",
+        "doosan-enerbility",
+        "hyundai-motor",
+        "hyundai-mobis",
+        "rainbow-robotics",
+        "doosan-robotics",
+        "posco-holdings",
+        "posco-dx",
+        "hd-hyundai",
+        "lg-electronics",
+        "hanwha-aerospace"
+      ]
+    },
+    {
+      "risk": "로봇 실증이 매출로 이어지지 않는 문제",
+      "status": "관찰 필요",
+      "affectedCompanies": [
+        "sk-hynix",
+        "samsung-electronics",
+        "hanmi-semiconductor",
+        "ls-electric",
+        "hyundai-motor",
+        "hyundai-mobis",
+        "rainbow-robotics",
+        "doosan-robotics",
+        "posco-holdings",
+        "posco-dx",
+        "hd-hyundai",
+        "lg-electronics",
+        "hanwha-aerospace"
+      ]
+    }
+  ],
+  "finalSummary": {
+    "strengthened": "중대한 변화 없음",
+    "weakened": "중대한 변화 없음",
+    "mostNotable": "관찰 필요",
+    "overheated": "판단 보류",
+    "watchMore": "중대한 변화 없음",
+    "newlyAdded": "없음",
+    "removalReview": "없음"
+  },
+  "sourceIds": [],
+  "collectionErrors": []
+}
